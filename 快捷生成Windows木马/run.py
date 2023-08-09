@@ -13,7 +13,7 @@ print("禁止用于任何非法用途")
 hosttype= input("是否使用公网IP(y/n): ")
 if hosttype == "y" :
    lhost = requests.get('https://ifconfig.me/ip').text.strip()
-   print("您已选择使用公网IP地址: " + lhost)
+   print("您已选择使用公网IP地址:" + lhost)
 else :
    print("您已选择使用局域网IP")
    lhost = input("请输入您的局域网IP地址: ")
